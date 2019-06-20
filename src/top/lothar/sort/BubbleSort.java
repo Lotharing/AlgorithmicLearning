@@ -27,6 +27,7 @@ public class BubbleSort {
 			for(int j=0; j<data.length-1;j++){
 				
 				if(data[j]>data[j+1]){
+					
 					int temp = data[j];
 					
 					data[j] = data[j+1];
