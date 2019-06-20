@@ -64,7 +64,9 @@ public class TwoSum {
 	}
 	/**
 	 * 时间复杂度：O(n)  空间复杂度：O(n)
+	 * 
 	 * 先进行第一次循环，将所有数组元素放入哈希表中
+	 * 
 	 * 第二次循环在哈希表中进行查找出能与第 i 个数组元素相加等于target目标值数值的非自身数组元素
 	 * @param nums
 	 * @param target
@@ -90,6 +92,7 @@ public class TwoSum {
 	}
 	/**
 	 * 输出格式规范
+	 * 
 	 * 相当与Arrays.toString(result)
 	 * @param result
 	 */
