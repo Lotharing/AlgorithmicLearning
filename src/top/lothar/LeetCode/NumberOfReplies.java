@@ -27,7 +27,7 @@ public class NumberOfReplies {
 	 * @return
 	 */
 	public static Boolean JudgeNumberOfReplies(int data) {
-		boolean flag = false;
+		boolean flag = false; 
 		//将int整数转化为字符串
 		String dataStr = String.valueOf(data);
 		//将字符串转化为数组
