@@ -4,7 +4,7 @@ public class BaseTreeExample {
 	
 	
 	/**
-	 * 						二叉树
+	 * 						二叉树（完全）
 	 *  		1
 	 *  	2		3
 	 *    4   5   6   7
@@ -26,6 +26,30 @@ public class BaseTreeExample {
 		three.leftNode=six;
 		three.rightNode=seven;
 		return head;
+	}
+	
+	/**
+	 * 树：中序，先序，后序，遍历使用,普通二叉树
+	 * 					6
+	 * 				  /   \
+	 * 				3	   9
+	 * 			   / \     / 
+	 * 			  1   5   7
+	 * 			   \  /    \
+	 *             2  4     8
+	 * @return
+	 */
+	protected static TreeNode createTree() {
+		TreeNode J = new TreeNode(null,null,8);
+		TreeNode H = new TreeNode(null,null,4);
+		TreeNode G = new TreeNode(null,null,2);
+		TreeNode F = new TreeNode(null, J, 7);
+		TreeNode E = new TreeNode(H, null, 5);
+		TreeNode D = new TreeNode(null, G, 1);
+		TreeNode C = new TreeNode(F, null, 9);
+		TreeNode B = new TreeNode(D, E, 3);
+		TreeNode A = new TreeNode(B, C, 6);
+		return A;
 	}
 	
 }
