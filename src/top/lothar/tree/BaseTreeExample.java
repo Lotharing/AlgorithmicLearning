@@ -51,5 +51,22 @@ public class BaseTreeExample {
 		TreeNode A = new TreeNode(B, C, 6);
 		return A;
 	}
+	/**
+	 * 构建对称二叉树
+	 * 	1
+	 * 2 2
+	 * 
+	 * @return
+	 */
+	protected static TreeNode createSymmetryTree() {
+		TreeNode G = new TreeNode(null,null,3);
+		TreeNode F = new TreeNode(null,null,4);
+		TreeNode E = new TreeNode(null,null,4);
+		TreeNode D = new TreeNode(null,null,3);
+		TreeNode C = new TreeNode(G,F,2);
+		TreeNode B = new TreeNode(E,D,2);
+		TreeNode A = new TreeNode(C,B,1);
+		return A;
+	}
 	
 }
