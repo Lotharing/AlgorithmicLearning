@@ -8,7 +8,7 @@ public class SinglyList {
 	
 	private int data;
 	
-	SinglyList next;
+	public SinglyList next;
 	
 	public SinglyList(int data) {
 		// TODO Auto-generated constructor stub
