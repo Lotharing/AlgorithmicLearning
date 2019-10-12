@@ -20,4 +20,21 @@ public class BaseLinkedListExample {
 		return a;
 	}
 	
+	/**
+	 * 内环单链表
+	 * @return
+	 */
+	protected static SinglyList createCycleList() {
+		SinglyList a = new SinglyList(1);
+		SinglyList b = new SinglyList(2);
+		SinglyList c = new SinglyList(3);
+		SinglyList d = new SinglyList(4);
+		SinglyList e = new SinglyList(5);
+		a.next = b;
+		b.next = c;
+		c.next = d;
+		d.next = b;
+		return a;
+	}
+	
 }
